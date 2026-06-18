@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Planner - Login</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<main class="auth-page">
+    <section class="auth-panel">
+        <h1>Wedding Planner</h1>
+        <form th:action="@{/login}" method="post" class="form-stack">
+            <label>
+                아이디
+                <input type="text" name="username" autocomplete="username" required>
+            </label>
+            <label>
+                비밀번호
+                <input type="password" name="password" autocomplete="current-password" required>
+            </label>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="link-row">
+            <a th:href="@{/members/join}">회원가입</a>
+            <a th:href="@{/password/find}">비밀번호 찾기</a>
+            <a th:href="@{/oauth2/authorization/kakao}">카카오 로그인</a>
+        </div>
+    </section>
+</main>
+<script th:src="@{/js/app.js}"></script>
+</body>
+</html>

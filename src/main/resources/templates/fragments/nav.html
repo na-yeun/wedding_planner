@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+<header th:fragment="nav" class="top-nav">
+    <a th:href="@{/calendar}">일정</a>
+    <a th:href="@{/todos}">TODO</a>
+    <a th:href="@{/expenses}">지출</a>
+    <a th:href="@{/partners}">짝꿍</a>
+    <a th:href="@{/mypage}">마이페이지</a>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">로그아웃</button>
+    </form>
+</header>
+</body>
+</html>

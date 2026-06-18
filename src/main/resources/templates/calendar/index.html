@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head('일정 관리')}"></head>
+<body>
+<header th:replace="~{fragments/nav :: nav}"></header>
+<main class="content">
+    <h1>일정 관리</h1>
+    <div id="calendar" class="panel"></div>
+</main>
+<script th:src="@{/js/calendar.js}"></script>
+</body>
+</html>

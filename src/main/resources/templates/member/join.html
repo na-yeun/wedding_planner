@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>회원가입</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body>
+<main class="content">
+    <h1>회원가입</h1>
+    <form class="form-grid">
+        <label>아이디 <input type="text" name="memId"></label>
+        <label>비밀번호 <input type="password" name="password"></label>
+        <label>이름 <input type="text" name="name"></label>
+        <label>성별 <input type="text" name="sex"></label>
+        <label>핸드폰번호 <input type="tel" name="phone"></label>
+        <label>결혼 예정일 <input type="date" name="weddingDate"></label>
+        <button type="button">가입</button>
+    </form>
+</main>
+</body>
+</html>
